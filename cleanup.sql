@@ -1,4 +1,4 @@
-DROP TABLE State
+DROP TABLE "State"
 DROP TABLE GrowsIn
 DROP TABLE Plant
 DROP TABLE ThreatenedPlant
