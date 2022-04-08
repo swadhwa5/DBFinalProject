@@ -1,9 +1,9 @@
-DROP TABLE "State"
-DROP TABLE GrowsIn
-DROP TABLE Plant
-DROP TABLE ThreatenedPlant
-DROP TABLE FloweringPlant
-DROP TABLE Non-FloweringPlant
-DROP TABLE BotanicalGarden
-DROP TABLE FoodPlant
-DROP TABLE WaterBody
+SET sql_mode='ANSI_QUOTES';
+
+DROP TABLE IF EXISTS GrowsIn;
+DROP TABLE IF EXISTS BotanicalGarden;
+DROP TABLE IF EXISTS WaterBody;
+DROP TABLE IF EXISTS "State";
+DROP TABLE IF EXISTS ThreatenedPlant;
+DROP TABLE IF EXISTS FloweringPlant;
+DROP TABLE IF EXISTS Plant;
