@@ -1,3 +1,6 @@
+-- Name: Shreya Wadhwa
+-- JHEDID: swadhwa5
+
 SET sql_mode='ANSI_QUOTES';
 
 DROP TABLE IF EXISTS GrowsIn;
@@ -74,7 +77,8 @@ CREATE TABLE GrowsIn (
    "State" VARCHAR(200),
    SpeciesName VARCHAR(500), 
    PRIMARY KEY(SpeciesName, "State"),
-   FOREIGN KEY("State") REFERENCES "State"("State")
+   FOREIGN KEY("State") REFERENCES "State"("State"),
+   FOREIGN KEY(SpeciesName) REFERENCES Plant(SpeciesName)
 );
 
 LOAD DATA LOCAL INFILE './Plant-small.txt' 
